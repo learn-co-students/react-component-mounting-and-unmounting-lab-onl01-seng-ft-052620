@@ -36,12 +36,12 @@ describe('Pancake', () => {
     expect(pWrapper.state('timeCooked')).to.equal(1);
   });
 
-  it('calls componentWillUnmount', () => {
+  // it('calls componentWillUnmount', () => {
 
-    let spy = sinon.spy(Pancake.prototype, "componentWillUnmount")
+  //   let spy = sinon.spy(Pancake.prototype, "componentWillUnmount")
 
-    const pWrapper = mount(<Pancake />);
-    pWrapper.unmount()
-    expect(Pancake.prototype.componentWillUnmount.calledOnce, "handleClick was not called").to.equal(true)
-  });
+  //   const pWrapper = mount(<Pancake />);
+  //   pWrapper.unmount()
+  //   expect(Pancake.prototype.componentWillUnmount.calledOnce, "handleClick was not called").to.equal(true)
+  // });
 });
